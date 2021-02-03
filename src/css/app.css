@@ -4,6 +4,20 @@ body {
     text-align: center;
 }
 
+h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+h2 {
+    font-size: 1.75em;
+    margin-bottom: 1em;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
 .wrapper {
     height: 100vh;
     display: grid;
@@ -32,6 +46,7 @@ body {
 .main {
     grid-area: main;
     padding: 2em;
+    text-align: left;
 }
 
 .footer {
