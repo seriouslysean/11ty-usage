@@ -4,6 +4,9 @@
   "description": "11ty, how does it work?",
   "main": "index.js",
   "scripts": {
+    "_clean": "rm -rf dist",
+    "build": "npm run _clean && eleventy",
+    "start": "eleventy --serve --port 3000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

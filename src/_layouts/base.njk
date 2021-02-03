@@ -1,0 +1,25 @@
+---
+title: Eleventy Usage
+---
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>{{ title }}</title>
+    </head>
+    <body>
+        {% include 'header.njk' %}
+
+        <!--
+        content is part of the page "supplied data" from 11ty
+        https://www.11ty.dev/docs/data-eleventy-supplied/
+        -->
+        <main>
+            {{ content | safe }}
+        </main>
+
+        {% include 'footer.njk' %}
+    </body>
+</html>

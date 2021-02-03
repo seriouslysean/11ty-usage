@@ -1,0 +1,14 @@
+---
+layout: base
+title: Posts | Eleventy Usage
+posts:
+  - Post 1
+  - Post 2
+  - Post 3
+---
+
+<ul>
+    {% for post in posts %}
+    <li>{{ post }}</li>
+    {% endfor %}
+</ul>
