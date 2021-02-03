@@ -1,4 +1,7 @@
 module.exports = (eleventyConfig) => {
+    // Copy `/src/css` to `/dist/img`
+    eleventyConfig.addPassthroughCopy('src/css');
+
     // Nunjucks Filter
     eleventyConfig.addNunjucksShortcode('currentYear', () => new Date().getFullYear().toString());
 
