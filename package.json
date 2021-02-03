@@ -1,0 +1,23 @@
+{
+  "name": "11ty-usage",
+  "version": "0.1.0",
+  "description": "11ty, how does it work?",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seriouslysean/11ty-usage.git"
+  },
+  "author": "Sean Kennedy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seriouslysean/11ty-usage/issues"
+  },
+  "homepage": "https://github.com/seriouslysean/11ty-usage#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1"
+  }
+}
