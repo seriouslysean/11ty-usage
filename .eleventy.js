@@ -3,6 +3,9 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addPassthroughCopy('src/css');
 
     // Nunjucks Filter
+    eleventyConfig.addNunjucksFilter('formatLocalDate', (date) => date.toLocaleDateString());
+
+    // Nunjucks Shortcode
     eleventyConfig.addNunjucksShortcode('currentYear', () => new Date().getFullYear().toString());
 
     return {
