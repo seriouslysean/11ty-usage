@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Posts | Eleventy Usage</title>
+
+        <link rel="stylesheet" href="/11ty-usage/css/reset.css">
+        <link rel="stylesheet" href="/11ty-usage/css/app.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+    <h1>Posts | Eleventy Usage</h1>
+
+    <nav class="navigation">
+    <ul>
+        <li><a href="/11ty-usage/">Home</a></li>
+        <li><a href="/11ty-usage/posts">Posts</a></li>
+    </ul>
+</nav>
+
+</header>
+
+
+            <!--
+            content is part of the page "supplied data" from 11ty
+            https://www.11ty.dev/docs/data-eleventy-supplied/
+            -->
+            <main class="main">
+                
+<div class="post-index">
+    
+
+
+
+<nav class="pagination">
+    
+        <span class="pagination__link pagination__link--next pagination__link--disabled">Newer Articles</span>
+    
+
+    
+        <a class="pagination__link pagination__link--previous" href="/11ty-usage/posts/1/">Older Articles</a>
+    
+</nav>
+
+
+
+    <ul>
+        
+        <li>
+            <a href="/11ty-usage/post-7/" class="post-index__link">
+                <span class="post-index__link-text">Post 7</span>
+                <span class="post-index__link-date">(2/3/2021)</span>
+            </a>
+        </li>
+        
+        <li>
+            <a href="/11ty-usage/post-6/" class="post-index__link">
+                <span class="post-index__link-text">Post 6</span>
+                <span class="post-index__link-date">(2/2/2021)</span>
+            </a>
+        </li>
+        
+        <li>
+            <a href="/11ty-usage/post-5/" class="post-index__link">
+                <span class="post-index__link-text">Post 5</span>
+                <span class="post-index__link-date">(2/1/2021)</span>
+            </a>
+        </li>
+        
+    </ul>
+
+    
+
+
+
+<nav class="pagination">
+    
+        <span class="pagination__link pagination__link--next pagination__link--disabled">Newer Articles</span>
+    
+
+    
+        <a class="pagination__link pagination__link--previous" href="/11ty-usage/posts/1/">Older Articles</a>
+    
+</nav>
+
+
+</div>
+
+            </main>
+
+            <footer class="footer">
+    2021
+</footer>
+
+        </div>
+    </body>
+</html>
