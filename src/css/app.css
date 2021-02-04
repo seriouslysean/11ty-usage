@@ -23,6 +23,10 @@ a:active,
 a:link,
 a:visited {
     color: #000;
+    text-decoration: none;
+}
+a:hover {
+    color: #333333;
 }
 
 .wrapper {
@@ -59,7 +63,6 @@ a:visited {
 .post-index__link {
     background: #DEDEDE;
     display: block;
-    text-decoration: none;
     width: 300px;
     max-width: 100%;
     margin: 0 auto 2em;
@@ -78,6 +81,33 @@ a:visited {
 
 .post-index__link-date {
     display: block;
+    opacity: 0.5;
+}
+
+.pagination {
+    display: flex;
+    width: calc(300px + 2em);
+    margin: 0 auto 2em;
+}
+
+.pagination__link {
+    background: #DEDEDE;
+    display: flex;
+    padding: 1em;
+    width: calc(50% - 1em);
+}
+
+.pagination__link--next {
+    justify-self: flex-start;
+    margin-right: 1em;
+}
+
+.pagination__link--previous {
+    justify-self: flex-end;
+    margin-left: 1em;
+}
+
+.pagination__link--disabled {
     opacity: 0.5;
 }
 

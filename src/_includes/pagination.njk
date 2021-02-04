@@ -1,0 +1,21 @@
+{#
+The pagination object is reversed so that newer posts show up at the top
+This means that the nextPageHref and previousPageHref values are reversed also
+#}
+{% set nextPageHref = pagination.previousPageHref %}
+{% set previousPageHref = pagination.nextPageHref %}
+{% if pagination.pageLinks.length > 1 %}
+<nav class="pagination">
+    {% if nextPageHref %}
+        <a class="pagination__link pagination__link--next" href="{{ nextPageHref | url }}">Newer Articles</a>
+    {% else %}
+        <span class="pagination__link pagination__link--next pagination__link--disabled">Newer Articles</span>
+    {% endif %}
+
+    {% if previousPageHref %}
+        <a class="pagination__link pagination__link--previous" href="{{ previousPageHref | url }}">Older Articles</a>
+    {% else %}
+        <span class="pagination__link pagination__link--previous pagination__link--disabled">Older Articles</span>
+    {% endif %}
+</nav>
+{% endif %}
