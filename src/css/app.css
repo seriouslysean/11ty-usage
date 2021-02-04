@@ -18,6 +18,13 @@ p {
     margin-bottom: 1em;
 }
 
+a,
+a:active,
+a:link,
+a:visited {
+    color: #000;
+}
+
 .wrapper {
     height: 100vh;
     display: grid;
@@ -47,6 +54,43 @@ p {
     grid-area: main;
     padding: 2em;
     text-align: left;
+}
+
+.post-index__link {
+    background: #DEDEDE;
+    display: block;
+    text-decoration: none;
+    width: 300px;
+    max-width: 100%;
+    margin: 0 auto 2em;
+    padding: 1em;
+    text-align: center;
+}
+
+.post-index__link:hover {
+    background: #CDCDCD;
+}
+
+.post-index__link-text {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.post-index__link-date {
+    display: block;
+    opacity: 0.5;
+}
+
+.post__heading {
+    margin-bottom: 0.25em;
+}
+
+.post__meta {
+    margin-bottom: 2em;
+}
+
+.post__date {
+    font-style: italic;
 }
 
 .footer {
