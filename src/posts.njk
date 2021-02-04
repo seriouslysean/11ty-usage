@@ -13,7 +13,7 @@ pagination:
     <ul>
         {% for post in pagination.items %}
         <li>
-            <a href="{{ post.url }}" class="post-index__link">
+            <a href="{{ post.url | url }}" class="post-index__link">
                 <span class="post-index__link-text">{{ post.data.title }}</span>
                 <span class="post-index__link-date">({{ post.date | formatLocalDate }})</span>
             </a>

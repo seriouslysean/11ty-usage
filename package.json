@@ -16,7 +16,7 @@
   "scripts": {
     "_clean": "rm -rf dist",
     "build": "npm run _clean && eleventy",
-    "deploy": "npm run build && push-dir --dir=dist --branch=gh-pages --cleanup",
+    "deploy": "ELEVENTY_ENV=production npm run build && push-dir --dir=dist --branch=gh-pages --cleanup && npm run _clean",
     "start": "eleventy --serve --port 3000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

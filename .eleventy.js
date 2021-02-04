@@ -20,6 +20,7 @@ module.exports = (eleventyConfig) => {
             // https://www.11ty.dev/docs/config/#directory-for-layouts-(optional)
             layouts: '_layouts',
         },
+        pathPrefix: process.env.ELEVENTY_ENV === 'production' ? '/11ty-usage/' : '/',
         templateFormats: [
             // https://mozilla.github.io/nunjucks/
             'njk',
@@ -27,4 +28,5 @@ module.exports = (eleventyConfig) => {
             'md',
         ],
     };
+
 }

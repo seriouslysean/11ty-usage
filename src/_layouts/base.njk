@@ -9,8 +9,8 @@ title: Eleventy Usage
 
         <title>{{ title }}</title>
 
-        <link rel="stylesheet" href="/css/reset.css">
-        <link rel="stylesheet" href="/css/app.css">
+        <link rel="stylesheet" href="{{ '/css/reset.css' | url }}">
+        <link rel="stylesheet" href="{{ '/css/app.css' | url }}">
     </head>
     <body>
         <div class="wrapper">
